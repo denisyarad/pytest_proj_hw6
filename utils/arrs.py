@@ -13,6 +13,8 @@ def get(array, index, default=None):
     """
     if index < 0:
         return default
+    elif array == [] and index == 0:
+        return default
 
     return array[index]
 
